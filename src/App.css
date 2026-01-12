@@ -13,6 +13,7 @@ table{
 
 thead tr{
     background-color: rgb(51, 45, 134);
+    color:white
 }
 
  tbody tr:hover{
@@ -46,6 +47,7 @@ nav{
     top:0;
     height: 60px;
     text-align: center;
+    border-bottom: 1px solid rgb(160, 133, 133);
 
 }
 
