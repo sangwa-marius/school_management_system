@@ -6,7 +6,7 @@ table,tr,td,th{
 
 table{
     width:50%;
-    margin:100px auto;
+    margin: 100px auto
     
 
 }
@@ -51,11 +51,22 @@ nav{
 
 }
 
-.active-link {
-  color: green;
-  font-weight: bold;
+.welcome{
+    color:blue;
+    margin: 100px auto;
+    font-size: 30px;
+    font-weight: 1000;
+    width: 80%;
+    text-align: center;
+    animation:fade 2000ms infinite alternate-reverse;
 }
 
-.inactive-link {
-  color: gray;
+@keyframes fade{
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.2);
+    }
 }

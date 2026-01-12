@@ -17,7 +17,7 @@ useEffect(()=>{
 return(
     <>
     
-    <div>
+    
         <table>
                 <thead>
                 <tr><th>Names</th><th>Math</th><th>Physics</th><th>Chemistry</th><th>Biology</th><th>ICT</th><th>Average(%)</th></tr>
@@ -43,7 +43,7 @@ return(
         </table>
           
     
-    </div>
+    
     </>
 )
 

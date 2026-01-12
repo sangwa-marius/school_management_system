@@ -5,6 +5,9 @@ function Home (){
 
     return(
         <>
+        <div className='welcome'>
+           <h2>Welcome! This is the general over view of the students in our database</h2> 
+        </div>
             <Users/>
         </>
     )

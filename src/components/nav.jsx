@@ -1,29 +1,59 @@
-import {Link}from 'react-router-dom';
-function Nav(){
-    return(
-        <>
-        <nav>
+import { NavLink } from "react-router-dom";
 
-            <Link style ={{
-                color:'blue',
-                marginLeft:'60px',
-                marginTop:'20px'
-            }} to ='/'>Home</Link>
-            <Link  style ={{
-                color:'blue',
-                marginLeft:'60px',
-                marginTop:'20px'
-            }}
-             to ='/ranking'>Student Ranking</Link>
-            <Link  style ={{
-                color:'blue',
-                marginLeft:'60px',
-                marginTop:'20px'
-            }}       
-             to ='/top'>Top ten</Link>
-        </nav>
-        </>
-    )
+function Navbar() {
+  return (
+    <nav
+      style={{
+        display: "flex",
+        gap: "20px",
+        padding: "12px 20px",
+        background: "#f5f5f5",
+        alignItems: "center"
+      }}
+    >
+      <NavLink
+        to="/"
+        style={({ isActive }) => ({
+          color: isActive ? "#0d6efd" : "#555",
+          textDecoration: "none",
+          fontWeight: isActive ? "700" : "500",
+          borderBottom: isActive ? "2px solid #0d6efd" : "2px solid transparent",
+          paddingBottom: "4px",
+          transition: "all 0.2s ease-in-out"
+        })}
+      >
+        Home
+      </NavLink>
+
+      <NavLink
+        to="/ranking"
+        style={({ isActive }) => ({
+          color: isActive ? "#0d6efd" : "#555",
+          textDecoration: "none",
+          fontWeight: isActive ? "700" : "500",
+          borderBottom: isActive ? "2px solid #0d6efd" : "2px solid transparent",
+          paddingBottom: "4px",
+          transition: "all 0.2s ease-in-out"
+        })}
+      >
+        Student Ranking
+      </NavLink>
+
+      <NavLink
+        to="/top"
+        style={({ isActive }) => ({
+          color: isActive ? "#0d6efd" : "#555",
+          textDecoration: "none",
+          fontWeight: isActive ? "700" : "500",
+          borderBottom: isActive ? "2px solid #0d6efd" : "2px solid transparent",
+          paddingBottom: "4px",
+          transition: "all 0.2s ease-in-out"
+        })}
+      >
+        Top Ten
+      </NavLink>
+    </nav>
+  );
 }
 
-export default Nav;
+export default Navbar;
