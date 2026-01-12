@@ -1,0 +1,51 @@
+table,tr,td,th{
+    border-bottom:1px solid;
+    padding:5px;
+    text-align: right;
+}
+
+table{
+    width:50%;
+    margin:100px auto;
+    
+
+}
+
+thead tr{
+    background-color: rgb(51, 45, 134);
+}
+
+ tbody tr:hover{
+    background:rgb(174, 243, 243);
+}
+
+
+
+@media (max-width : 768px){
+    table{
+        font-size: 12px;
+        width:100%;
+
+    }
+    
+}
+
+@media (max-width:1024px) {
+    table{
+        font-size: 12px;
+        width: 80%;
+    }
+
+    
+}
+
+nav{
+    background-color:whitesmoke;
+    position:fixed;
+    width: 100%;
+    top:0;
+    height: 60px;
+    text-align: center;
+
+}
+
