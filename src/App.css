@@ -51,3 +51,11 @@ nav{
 
 }
 
+.active-link {
+  color: green;
+  font-weight: bold;
+}
+
+.inactive-link {
+  color: gray;
+}
