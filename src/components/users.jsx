@@ -20,14 +20,13 @@ return(
     <div>
         <table>
                 <thead>
-                <tr><th>ID</th><th>Names</th><th>Math</th><th>Physics</th><th>Chemistry</th><th>Biology</th><th>ICT</th><th>Average(%)</th></tr>
+                <tr><th>Names</th><th>Math</th><th>Physics</th><th>Chemistry</th><th>Biology</th><th>ICT</th><th>Average(%)</th></tr>
             </thead>
                 
              {students.map((student)=>(
                 <tbody key ={student._id}>
 
                  <tr>
-                    <td>{student._id}</td>
                     <td>{student.name}</td>
                     <td>{student.scores.Math}</td>
                     <td>{student.scores.Physics}</td>
