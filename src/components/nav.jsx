@@ -8,7 +8,10 @@ function Navbar() {
         gap: "20px",
         padding: "12px 20px",
         background: "#f5f5f5",
-        alignItems: "center"
+        alignItems: "center",
+        position:'fixed',
+        zIndex:'1',
+        
       }}
     >
       <NavLink

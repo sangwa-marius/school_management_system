@@ -57,16 +57,21 @@ nav{
     font-size: 30px;
     font-weight: 1000;
     width: 80%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    animation:fade 2000ms infinite alternate-reverse;
+    animation:fade 2s infinite alternate-reverse;
 }
 
 @keyframes fade{
-    from{
-        transform: scale(1);
+    0%{
+        color:rgba(1, 1, 70, 0.671);
+        border: 1px solid;
     }
 
-    to{
-        transform: scale(1.2);
+    50%{
+       color:rgb(2, 17, 104)
+    }
+    100%{
+        color:rgb(3, 30, 104)
     }
 }
