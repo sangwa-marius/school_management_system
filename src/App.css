@@ -6,9 +6,7 @@ table,tr,td,th{
 
 table{
     width:50%;
-    margin: 100px auto
-    
-
+    margin: 100px auto;    
 }
 
 thead tr{
@@ -26,18 +24,14 @@ thead tr{
     table{
         font-size: 12px;
         width:100%;
-
-    }
-    
+    }   
 }
 
 @media (max-width:1024px) {
     table{
         font-size: 12px;
         width: 80%;
-    }
-
-    
+    }   
 }
 
 nav{
@@ -48,7 +42,6 @@ nav{
     height: 60px;
     text-align: center;
     border-bottom: 1px solid rgb(160, 133, 133);
-
 }
 
 .welcome{

@@ -20,9 +20,9 @@ function Ranking(){
                         <th>Name</th>
                         <th>Math</th>
                         <th>Physics</th>
-                        <th>Chemistry</th>
-                        <th>Biology</th>
-                        <th>ICT</th>
+                        <th>Computer Sciences</th>
+                        <th>Average</th>
+                        
 
                     </tr>
                 </thead>
@@ -33,9 +33,10 @@ function Ranking(){
                             <td>{user.name}</td>
                             <td>{user.scores.Math}</td>
                             <td>{user.scores.Physics}</td>
-                            <td>{user.scores.Chemistry}</td>
-                            <td>{user.scores.Biology}</td>
-                            <td>{user.scores.ICT}</td>
+                            <td>{user.scores.ComputerScience}</td>
+                            <td>{user.average}</td>
+                            
+                           
                         </tr>
                    </tbody> 
                 ))}

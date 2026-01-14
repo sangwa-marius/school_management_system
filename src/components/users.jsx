@@ -20,7 +20,12 @@ return(
     
         <table>
                 <thead>
-                <tr><th>Names</th><th>Math</th><th>Physics</th><th>Chemistry</th><th>Biology</th><th>ICT</th><th>Average(%)</th></tr>
+                <tr>
+                    <th>Names</th>
+                    <th>Math</th>
+                    <th>Physics</th>
+                    <th>Computer Sciences</th>
+                    <th>Average(%)</th></tr>
             </thead>
                 
              {students.map((student)=>(
@@ -30,9 +35,7 @@ return(
                     <td>{student.name}</td>
                     <td>{student.scores.Math}</td>
                     <td>{student.scores.Physics}</td>
-                    <td>{student.scores.Chemistry}</td>
-                    <td>{student.scores.Biology}</td>
-                    <td>{student.scores.ICT}</td>
+                    <td>{student.scores.ComputerScience }</td>
                     <th>{student.average}</th>
                 </tr>
                 </tbody>
