@@ -6,7 +6,6 @@ function Users(){
 const [students, setStudents] = useState([]);
 async  function getStudents(){
     const {data} = await axios.get('http://localhost:4000/users')
-    console.log(data)
     setStudents(data)
    
 }
