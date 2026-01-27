@@ -55,6 +55,21 @@ function Navbar() {
       >
         Top Ten
       </NavLink>
+
+
+       <NavLink
+        to="/add"
+        style={({ isActive }) => ({
+          color: isActive ? "#0d6efd" : "#555",
+          textDecoration: "none",
+          fontWeight: isActive ? "700" : "500",
+          borderBottom: isActive ? "2px solid #0d6efd" : "2px solid transparent",
+          paddingBottom: "4px",
+          transition: "all 0.2s ease-in-out"
+        })}
+      >
+        Add Student
+      </NavLink>
     </nav>
   );
 }
